@@ -8,4 +8,9 @@ public class Key : MonoBehaviour
     {
         Debug.Log("Click en " + gameObject.name);
     }
+
+    void KeyPress()
+    {
+
+    }
 }
