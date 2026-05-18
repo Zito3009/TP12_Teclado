@@ -5,6 +5,7 @@ using UnityEngine;
 public class Key : MonoBehaviour
 {
     bool pressed = false;
+    float pressedOffset = 1f;
     
     void OnMouseDown()
     {
@@ -15,6 +16,11 @@ public class Key : MonoBehaviour
 
     void OnMouseUp()
     {
-        if(pressed)
+        if(pressed){
+            transform.Translate(0, pressedOffset, 0);
+            pressed = false;
+        }
     }
+
+
 }
